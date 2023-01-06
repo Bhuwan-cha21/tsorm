@@ -1,0 +1,6 @@
+let userModel = require('../model/user')
+const factory = require('../factory')
+export const   addPlayer =   factory.addOne(userModel)
+export const findall =  factory.findall(userModel)
+export const getById = factory.getById(userModel)
+export const findOne = factory.findOne(userModel)

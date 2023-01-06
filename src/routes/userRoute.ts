@@ -1,9 +1,9 @@
-const {addUser , findall ,getById,findOne} = require('../controller/userController')
+const userController= require('../controller/userController')
 const Router = require('express').Router()
-Router.post('/adduser' ,addUser )
-Router.get('/allusers',findall)
-Router.get('/getbyid/:id',getById)
-Router.get('/findone',findOne)
+Router.post('/adduser' ,userController.addUser )
+Router.get('/allusers',userController.findall)
+Router.get('/getbyid/:id',userController.getById)
+Router.get('/findone',userController.findOne)
 
 
 

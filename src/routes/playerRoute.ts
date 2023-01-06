@@ -5,5 +5,6 @@ Router.post('/addplayer' ,playerController.addPlayer )
 Router.get('/allplayers',playerController.findall)
 Router.get('/getbyid/:id',playerController.getById)
 Router.get('/findone',playerController.findOne)
+Router.delete('/deleteone/:id',playerController.deleteOne)
 
 module.exports = Router
